@@ -1,0 +1,131 @@
+/* icon for date input placeholder */
+* {
+  font-family: Roboto, sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.search-wrapper {
+  height: 100%;
+  width: 100%;
+}
+.search-wrapper .search {
+  width: 964px;
+  margin: 68px auto;
+}
+.search-wrapper .search .search__inputs form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  height: 100px;
+  background: #5C87DB;
+  border-radius: 15px 15px 0 0;
+}
+.search-wrapper .search .search__inputs form .search__inputs__item {
+  /* placeholder text style */
+  /* regular text style */
+}
+.search-wrapper .search .search__inputs form .search__inputs__item label {
+  color: white;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 13px;
+}
+.search-wrapper .search .search__inputs form .search__inputs__item input[type=date]::-webkit-datetime-edit-text,
+.search-wrapper .search .search__inputs form .search__inputs__item input[type=date]::-webkit-datetime-edit-month-field,
+.search-wrapper .search .search__inputs form .search__inputs__item input[type=date]::-webkit-datetime-edit-day-field,
+.search-wrapper .search .search__inputs form .search__inputs__item input[type=date]::-webkit-datetime-edit-year-field {
+  color: lightgray;
+}
+.search-wrapper .search .search__inputs form .search__inputs__item input[type=date].filled::-webkit-datetime-edit-text,
+.search-wrapper .search .search__inputs form .search__inputs__item input[type=date].filled::-webkit-datetime-edit-month-field,
+.search-wrapper .search .search__inputs form .search__inputs__item input[type=date].filled::-webkit-datetime-edit-day-field,
+.search-wrapper .search .search__inputs form .search__inputs__item input[type=date].filled::-webkit-datetime-edit-year-field {
+  color: #5C5C5C;
+}
+.search-wrapper .search .search__inputs form .search__inputs__item input:focus {
+  border: 3px solid #3E67B7;
+}
+.search-wrapper .search .search__inputs form .search__inputs__item input {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 4px;
+  width: 208px;
+  height: 40px;
+  background: #FFFFFF;
+  border-radius: 10px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  border: none;
+  outline: none;
+  padding: 12px;
+  color: #5C5C5C;
+}
+.search-wrapper .search .search__inputs form .search__inputs__item input::placeholder {
+  color: lightgray;
+}
+.search-wrapper .search .search__inputs form .search__inputs__item input::-webkit-calendar-picker-indicator {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path fill="gray" d="M20 3h-1V1h-2v2H7V1H5v2H4c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 18H4V8h16v13z"/></svg>');
+}
+.search-wrapper .search .search__inputs form .search__inputs__item input.filled::-webkit-calendar-picker-indicator {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path fill="dodgerblue" d="M20 3h-1V1h-2v2H7V1H5v2H4c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 18H4V8h16v13z"/></svg>');
+}
+.search-wrapper .search .search__inputs form .search__inputs__item input.invalid {
+  border: 2px solid red;
+}
+.search-wrapper .search .search__btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 28px;
+  padding-left: 28px;
+  height: 86px;
+  box-shadow: 0 0 14px rgba(112, 121, 153, 0.3);
+  border-radius: 0 0 15px 15px;
+}
+.search-wrapper .search .search__btn .search__btn__city {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+}
+.search-wrapper .search .search__btn .search__btn__city .search__btn__city__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 30px;
+  background: #FFFFFF;
+  border: 1px solid #B7BAC1;
+  border-radius: 10px;
+  color: darkblue;
+  font-size: 14px;
+}
+.search-wrapper .search .search__btn button {
+  width: 158px;
+  min-width: 158px;
+  height: 40px;
+  background: #5C87DB;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+.search-wrapper .search .search__btn button.disabled {
+  background: #B7BAC1;
+}
+
+/*# sourceMappingURL=search.css.map */

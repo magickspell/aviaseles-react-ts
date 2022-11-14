@@ -1,0 +1,124 @@
+@import '../../index.scss';
+
+.search-wrapper {
+  height: 100%;
+  width: 100%;
+
+  .search {
+    width: 964px;
+    margin: 68px auto;
+
+    .search__inputs {
+      form {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 24px;
+        height: 100px;
+        background: #5C87DB;
+        border-radius: 15px 15px 0 0;
+
+        .search__inputs__item {
+          label {
+            color: white;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 11px;
+            line-height: 13px;
+          }
+
+          @include date-placeholder;
+
+          input:focus {
+            border: 3px solid #3E67B7;
+          }
+
+          input {
+            display: flex;
+            flex-direction: row-reverse;
+            gap: 4px;
+            width: 208px;
+            height: 40px;
+            background: #FFFFFF;
+            border-radius: 10px;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 16px;
+            border: none;
+            outline: none;
+            padding: 12px;
+            color: #5C5C5C;
+
+            &::placeholder {
+              color: lightgray;
+            }
+
+            &::-webkit-calendar-picker-indicator {
+              background-image: $date-icon-dis;
+            }
+          }
+
+          input.filled {
+            &::-webkit-calendar-picker-indicator {
+              background-image: $date-icon;
+            }
+          }
+
+          input.invalid {
+            border: 2px solid red;
+          }
+        }
+      }
+    }
+
+    .search__btn {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-right: 28px;
+      padding-left: 28px;
+      height: 86px;
+      box-shadow: 0 0 14px rgba(112, 121, 153, 0.3);
+      border-radius: 0 0 15px 15px;
+
+      .search__btn__city {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 12px;
+
+        .search__btn__city__item {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 100px;
+          height: 30px;
+          background: #FFFFFF;
+          border: 1px solid #B7BAC1;
+          border-radius: 10px;
+          color: darkblue;
+          font-size: 14px;
+        }
+      }
+
+      button {
+        width: 158px;
+        min-width: 158px;
+        height: 40px;
+        background: #5C87DB;
+        border-radius: 10px;
+        outline: none;
+        border: none;
+        color: white;
+        cursor: pointer;
+      }
+
+      button.disabled {
+        background: #B7BAC1;
+      }
+    }
+  }
+}

@@ -1,0 +1,207 @@
+/* icon for date input placeholder */
+* {
+  font-family: Roboto, sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.result-wrapper {
+  height: 100%;
+  width: 100%;
+}
+.result-wrapper .result {
+  width: 964px;
+  margin: 68px auto;
+}
+.result-wrapper .result__ticket {
+  width: 100%;
+  box-shadow: 0 0 14px rgba(112, 121, 153, 0.3);
+  border-radius: 16px;
+  display: grid;
+  grid-template-columns: 764px 200px;
+}
+.result-wrapper .result__ticket .result__price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38px;
+  color: #232323;
+  border-left: 1px solid #DDE3EE;
+  padding-left: 48px;
+  height: 100%;
+}
+.result-wrapper .result__ticket .result__ticket_two {
+  border-top: 1px dashed dodgerblue;
+  border-radius: 16px 0 16px 16px !important;
+}
+.result-wrapper .result__ticket .result__ticket_one,
+.result-wrapper .result__ticket .result__ticket_two {
+  height: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 16px;
+  padding: 24px;
+}
+.result-wrapper .result__ticket .result__ticket_one .result__ticket__logo,
+.result-wrapper .result__ticket .result__ticket_two .result__ticket__logo {
+  position: relative;
+}
+.result-wrapper .result__ticket .result__ticket_one .result__ticket__logo .result__ticket__no-chargeback,
+.result-wrapper .result__ticket .result__ticket_two .result__ticket__logo .result__ticket__no-chargeback {
+  position: absolute;
+  top: -62px;
+  left: -24px;
+  background: #8BA5D8;
+  border-radius: 15px 0;
+  color: white;
+  padding: 8px 24px;
+}
+.result-wrapper .result__ticket .result__ticket_one .result__ticket__logo .result__ticket__logo__img,
+.result-wrapper .result__ticket .result__ticket_two .result__ticket__logo .result__ticket__logo__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  color: white;
+  font-style: italic;
+  font-size: 26px;
+  background: #C2D100;
+  margin: 0 auto 16px;
+}
+.result-wrapper .result__ticket .result__ticket_one .result__ticket__logo .result__ticket__logo__text,
+.result-wrapper .result__ticket .result__ticket_two .result__ticket__logo .result__ticket__logo__text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #5C5C5C;
+}
+.result-wrapper .result__ticket .result__ticket_one .result__ticket__body section,
+.result-wrapper .result__ticket .result__ticket_two .result__ticket__body section {
+  display: flex;
+  flex-direction: row;
+  width: 540px;
+}
+.result-wrapper .result__ticket .result__ticket_one .result__ticket__body section .result__ticket__info__picks,
+.result-wrapper .result__ticket .result__ticket_two .result__ticket__body section .result__ticket__info__picks {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: end;
+  margin-left: 24px;
+  height: 40px;
+}
+.result-wrapper .result__ticket .result__ticket_one .result__ticket__body section .result__ticket__info__picks img,
+.result-wrapper .result__ticket .result__ticket_two .result__ticket__body section .result__ticket__info__picks img {
+  width: auto;
+  height: min-content;
+  margin: 4px;
+}
+.result-wrapper .result__ticket .result__ticket_one .result__ticket__body section .result__ticket__way,
+.result-wrapper .result__ticket .result__ticket_two .result__ticket__body section .result__ticket__way {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 300px;
+  font-weight: 400;
+  font-size: 14px;
+  color: #B7BAC1;
+  margin: 0 40px;
+}
+.result-wrapper .result__ticket .result__ticket_one .result__ticket__body section .result__ticket__way .result__ticket__way__top,
+.result-wrapper .result__ticket .result__ticket_two .result__ticket__body section .result__ticket__way .result__ticket__way__top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4px;
+}
+.result-wrapper .result__ticket .result__ticket_one .result__ticket__body section .result__ticket__way .hr,
+.result-wrapper .result__ticket .result__ticket_two .result__ticket__body section .result__ticket__way .hr {
+  height: 8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.result-wrapper .result__ticket .result__ticket_one .result__ticket__body section .result__ticket__way .hr .hr__dot,
+.result-wrapper .result__ticket .result__ticket_two .result__ticket__body section .result__ticket__way .hr .hr__dot {
+  height: 8px;
+  width: 8px;
+  border-radius: 16px;
+  background: #B7BAC1;
+}
+.result-wrapper .result__ticket .result__ticket_one .result__ticket__body section .result__ticket__way .hr .hr__line,
+.result-wrapper .result__ticket .result__ticket_two .result__ticket__body section .result__ticket__way .hr .hr__line {
+  height: 1px;
+  width: 100%;
+  background: #B7BAC1;
+}
+.result-wrapper .result__ticket .result__ticket_one .result__ticket__body section .result__ticket__way .result__ticket__way__bot,
+.result-wrapper .result__ticket .result__ticket_two .result__ticket__body section .result__ticket__way .result__ticket__way__bot {
+  text-align: center;
+  margin-top: 8px;
+}
+.result-wrapper .result__ticket .result__ticket_one .result__ticket__body section .result__ticket__info_there,
+.result-wrapper .result__ticket .result__ticket_one .result__ticket__body section .result__ticket__info_from,
+.result-wrapper .result__ticket .result__ticket_two .result__ticket__body section .result__ticket__info_there,
+.result-wrapper .result__ticket .result__ticket_two .result__ticket__body section .result__ticket__info_from {
+  color: #232323;
+  margin-bottom: 24px;
+}
+.result-wrapper .result__ticket .result__ticket_one .result__ticket__body section .result__ticket__info_there .result__ticket__info__time,
+.result-wrapper .result__ticket .result__ticket_one .result__ticket__body section .result__ticket__info_from .result__ticket__info__time,
+.result-wrapper .result__ticket .result__ticket_two .result__ticket__body section .result__ticket__info_there .result__ticket__info__time,
+.result-wrapper .result__ticket .result__ticket_two .result__ticket__body section .result__ticket__info_from .result__ticket__info__time {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  margin-bottom: 8px;
+}
+.result-wrapper .result__ticket .result__ticket_one .result__ticket__body section .result__ticket__info_there .result__ticket__info__city,
+.result-wrapper .result__ticket .result__ticket_one .result__ticket__body section .result__ticket__info_there .result__ticket__info__date,
+.result-wrapper .result__ticket .result__ticket_one .result__ticket__body section .result__ticket__info_from .result__ticket__info__city,
+.result-wrapper .result__ticket .result__ticket_one .result__ticket__body section .result__ticket__info_from .result__ticket__info__date,
+.result-wrapper .result__ticket .result__ticket_two .result__ticket__body section .result__ticket__info_there .result__ticket__info__city,
+.result-wrapper .result__ticket .result__ticket_two .result__ticket__body section .result__ticket__info_there .result__ticket__info__date,
+.result-wrapper .result__ticket .result__ticket_two .result__ticket__body section .result__ticket__info_from .result__ticket__info__city,
+.result-wrapper .result__ticket .result__ticket_two .result__ticket__body section .result__ticket__info_from .result__ticket__info__date {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #5C5C5C;
+}
+.result-wrapper .result__ticket .result__ticket_one .result__ticket__body .result__ticket__times,
+.result-wrapper .result__ticket .result__ticket_two .result__ticket__body .result__ticket__times {
+  display: flex;
+  flex-direction: row;
+}
+.result-wrapper .result__ticket .result__ticket_one .result__ticket__body .result__ticket__times p,
+.result-wrapper .result__ticket .result__ticket_two .result__ticket__body .result__ticket__times p {
+  padding: 8px 16px;
+  border: 1px solid #B7BAC1;
+  border-radius: 8px;
+  margin-right: 8px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #5C5C5C;
+  cursor: pointer;
+}
+.result-wrapper .result__ticket .result__ticket_one .result__ticket__body .result__ticket__times p.active,
+.result-wrapper .result__ticket .result__ticket_two .result__ticket__body .result__ticket__times p.active {
+  background: #DDE3EE;
+  border: none;
+  color: black;
+}
+
+/*# sourceMappingURL=search-result.css.map */
